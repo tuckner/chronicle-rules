@@ -20,10 +20,6 @@ jobs:
       - name: test
         run: |
           echo '${{ steps.file_changes.outputs.files_modified}}'
-      - name: directory
-        run: ls rules/
-      - name: directory
-        run: dir
       - name: run loop
         run: |
-          for FILE in ${{ steps.file_changes.outputs.files_modified }}; do curl https://quiet-vista-5142.tines.io/webhook/a395fec0dcc9e7de5d5b7ced5d1a9ad3/36855516792bdde4c6aae2a904155313 -d $(base64 $FILE); done
+          for FILE in ${{ steps.file_changes.outputs.files_modified }}; do curl https://quiet-vista-5142.tines.io/webhook/a395fec0dcc9e7de5d5b7ced5d1a9ad3/36855516792bdde4c6aae2a904155313 -d "$(base64 $FILE)"; done
