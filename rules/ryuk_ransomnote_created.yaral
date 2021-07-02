@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-rule malware_ryuk_ransomnote_created
+profile malware_ryuk_ransomnote_created
 {
   meta:
     author = "Google Cloud Security"
