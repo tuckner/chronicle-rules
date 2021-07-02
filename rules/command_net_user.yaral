@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-rule suspicious_command_net_user
+profile suspicious_command_net_user
 {
   meta:
     author = "Google Cloud Security"
