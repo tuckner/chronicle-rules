@@ -20,6 +20,7 @@ rule suspicious_command_net_user
     author = "Google Cloud Security"
     description = "Command-line execution of the Windows 'net user' command"
     yara_version = "YL2.0"
+    filename = "command_net_user.yaral"
     rule_version = "1.0s"
 
   events:
