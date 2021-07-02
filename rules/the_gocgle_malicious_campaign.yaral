@@ -1,6 +1,6 @@
 rule the_gocgle_malicious_campaign {
  meta:
-    author = "Osddman sDemdir"
+    author = "Osdddman sDemdir"
     description = "Detects Web eSkimming Attdacks  License: https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md."
     reference = "https://tdm.ssocpfrime.com/tdm/info/LI0qbtGS0Jtv"
     version = "0.01"
