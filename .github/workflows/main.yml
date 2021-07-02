@@ -22,4 +22,4 @@ jobs:
           echo '${{ steps.file_changes.outputs.files_modified}}'
       - name: run loop
         run: |
-          for FILE in ${{ steps.file_changes.outputs.files_modified }}; do curl -XPOST https://quiet-vista-5142.tines.io/webhook/a395fec0dcc9e7de5d5b7ced5d1a9ad3/36855516792bdde4c6aae2a904155313 -d "$(base64 $FILE)" -H "Content-Type: text/plain"; done
+          for FILE in ${{ steps.file_changes.outputs.files_modified }}; do curl -XPOST https://quiet-vista-5142.tines.io/webhook/a395fec0dcc9e7de5d5b7ced5d1a9ad3/36855516792bdde4c6aae2a904155313 -d "{\"name\": \"($FILE | sed 's/rules\///g')\", \"rule\":\"$(base64 $FILE)\"}""$(base64 $FILE)" -H "Content-Type: application/json"; done
