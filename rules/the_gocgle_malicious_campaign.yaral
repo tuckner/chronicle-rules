@@ -1,6 +1,6 @@
 rule the_gocgle_malicious_campaign {
  meta:
-    author = "Osman Demir"
+    author = "Osman sDemir"
     description = "Detects Web Skimming Attacks  License: https://github.com/Neo23x0/sigma/blob/master/LICENSE.Detection.Rules.md."
     reference = "https://tdm.socprime.com/tdm/info/LI0qbtGS0Jtv"
     version = "0.01"
