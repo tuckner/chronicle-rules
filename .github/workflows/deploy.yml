@@ -1,5 +1,5 @@
 
-name: 'Get File Contents'
+name: 'Deploy Rules'
 on:
   push:
     branches:
