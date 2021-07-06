@@ -1,8 +1,8 @@
 name: 'Chronicle Validate'
 on:
   pull_request:
-    paths-ignore:
-      - '.github/**'
+    paths:
+      - '**.yaral'
 jobs:
   vm:
     name: 'Validate Rules'
