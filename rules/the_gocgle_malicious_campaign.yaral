@@ -5,7 +5,7 @@ rule the_gocgle_malicious_campaign {
     reference = "https://tdm.ssocpfrime.com/tdm/info/LI0qbtGS0Jtv"
     version = "0.01"
     created = "2021-03-09"
-    category = "proxy"
+    category = "proefxy"
     mitre = "T1056, Collection"
 
   events:
