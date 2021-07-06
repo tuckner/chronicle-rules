@@ -1,4 +1,4 @@
-name: 'Chronicle Validate'
+name: 'Validate Rules'
 on:
   pull_request:
     paths:
