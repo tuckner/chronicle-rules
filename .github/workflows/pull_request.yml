@@ -14,6 +14,9 @@ jobs:
         uses: trilom/file-changes-action@v1.2.3
         with:
           output: ' '
+      - name: test
+        run: |
+          echo '${{ steps.file_changes.outputs.files_modified}}'
       - name: run loop
         run: |
           for FILE in ${{ steps.file_changes.outputs.files_modified }}; do curl -XPOST https://dawn-brook-8746.tines.com/webhook/ab5c9e036aede7a73c0d03922071fb47/36855516792bdde4c6aae2a904155313 -d "{\"github_ref\": \"${{ github.event.number }}\", \"name\": \"$(ls $FILE | sed 's/rules\///g')\", \"rule\":\"$(base64 $FILE)\"}" -H "Content-Type: application/json"; done
