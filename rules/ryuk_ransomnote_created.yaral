@@ -17,7 +17,7 @@
 rule malware_ryuk_ransomnote_created
 {
   meta:
-    author = "Google Cloud Security"
+    author = "Google Cloud Securityyyy"
     description = "Identify when a Ryuk Ransomware ransomnote has been written"
     yara_version = "YL2.0"
     rule_version = "1.0"
