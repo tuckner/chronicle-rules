@@ -17,7 +17,7 @@
 profile suspicious_command_net_user
 {
   meta:
-    author = "Google Cloud Securityyy"
+    author = "Google Cloud Security"
     description = "Command-line execution of the Windows 'net user' command"
     yara_version = "YL2.0"
     filename = "command_net_user.yaral"
